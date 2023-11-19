@@ -35,29 +35,13 @@ const Statistics = () => {
         for (const s of lister) {
             if (s.toLowerCase() === "halal") {
                 hNum = hNum + 1;
-            }
-        }
-
-        for (const s of lister) {
-            if (s.toLowerCase() === "kosher") {
+            } else if (s.toLowerCase() === "kosher") {
                 kNum = kNum + 1;
-            }
-        }
-
-        for (const s of lister) {
-            if (s.toLowerCase() === "vegan" || s.toLowerCase() === "vegetarian") {
+            } else if (s.toLowerCase() === "vegan" || s.toLowerCase() === "vegetarian") {
                 vNum = vNum + 1;
-            }
-        }
-
-        for (const s of lister) {
-            if (s.toLowerCase() === "celiac") {
+            } else if (s.toLowerCase() === "celiac") {
                 cNum = cNum + 1;
-            }
-        }
-
-        for (const s of lister) {
-            if (s.toLowerCase() === "other") {
+            } else {
                 oNum = oNum + 1;
             }
         }
@@ -116,7 +100,7 @@ const Statistics = () => {
               labels: ["yes", "no"],
               datasets: [
                 {
-                  label: "Count",
+                  label: "Needs accomodation?",
                   data: accessData,
                 },
               ],
