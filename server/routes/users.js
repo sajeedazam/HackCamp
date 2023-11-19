@@ -1,18 +1,27 @@
-var express = require('express');
-var router = express.Router();
-const mongoose = require('mongoose');
-require('dotenv').config();
+const router = require("express").Router();
+const bcrypt = require("bcrypt");
+const { validate, User } = require("../models/user");
 
-const uri = process.env.MONGODB_KEY;
+router.post("/", async (req, res) => {
+  try {
+    const { error } = validate(req.body);
+    if (error)
+      return res.status(400).send({ message: error.details[0].message });
 
-mongoose.connect(`${uri}`, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true
-});
+    const user = await User.findOne({ email: req.body.email });
+    if (user)
+      return res
+        .status(409)
+        .send({ message: "User exist!" });
 
-/* GET users listing. */
-router.get('/', function (req, res, next) {
-  res.send('respond with a resource');
+    const salt = await bcrypt.genSalt(Number(10));
+    const hashPassword = await bcrypt.hash(req.body.password, salt);
+
+    await new User({ ...req.body, password: hashPassword }).save();
+    res.status(201).send({ message: "User created" });
+  } catch (error) {
+    res.status(500).send({ message: "Internal Server Error" });
+  }
 });
 
 module.exports = router;
