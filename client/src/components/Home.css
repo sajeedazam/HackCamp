@@ -3,7 +3,7 @@
 
 }
 .welcome_text {
-    background-image: url("C:\Users\wizar\Desktop\HackCamp\backgroundSecondTry.png");
+    background-image: url("../../../backgroundSecondTry.png");
     background-repeat: no-repeat, repeat;
     position: relative;
     overflow: hidden;

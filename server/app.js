@@ -19,10 +19,7 @@ mongoose.connect(`${uri}`, {
   useUnifiedTopology: true
 });
 
-const corsOptions = {
-    origin: "https://localhost:3000",
-};
-app.use(cors(corsOptions));
+app.use(cors());
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
