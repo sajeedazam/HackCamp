@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import "./Login.css"; // Import the Login.css file
+import "./Login.css"; // Import the updated Login.css file
 
 const Login = () => {
   const [data, setData] = useState({ email: "", password: "" });
@@ -39,10 +39,10 @@ const Login = () => {
   };
 
   return (
-    <div className="login_container"> {/* Apply class names directly */}
-      <div className="login_form_container">
-        <div className="left">
-          <form className="form_container" onSubmit={handleSubmit}>
+    <div className="login_container_loginPage">
+      <div className="login_form_container_loginPage">
+        <div className="left_loginPage">
+          <form className="form_container_loginPage" onSubmit={handleSubmit}>
             <h1>Login to Your Account</h1>
             <input
               type="email"

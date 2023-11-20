@@ -1,0 +1,50 @@
+/* UserHome.css */
+.main_container {
+    background-image: url('../../../backgroundSecondTry.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh; /* Adjust the height based on your design */
+    background-position: 0px 350px; /* Center and hide the bottom half */
+  }
+  
+  .navbar {
+    width: 100%;
+    height: 70px;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navbar h1 {
+    color: white;
+    font-size: 25px;
+    margin-left: 20px;
+  }
+  
+  .white_btn {
+    border: none;
+    outline: none;
+    padding: 12px 0;
+    background-color: white;
+    border-radius: 20px;
+    width: 120px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  .events_section {
+    margin-left: 30px;
+    margin-top: 20px;
+  }
+
+  .explore_section {
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  .grid-container {
+    margin-top: 30px;
+  }

@@ -1,0 +1,104 @@
+.page {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.header {
+    margin: auto;
+    position: relative;
+    text-align: center;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--orange-to-red, linear-gradient(180deg, #F90 17.71%, rgba(255, 0, 0, 0.66) 100%));
+}
+
+.headalign {
+    grid-template-columns: 80px 1fr;
+    display: grid;
+}
+
+.footer {
+    margin: auto;
+    position: sticky;
+    text-align: center;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--orange-to-red, linear-gradient(180deg, #F90 17.71%, rgba(255, 0, 0, 0.66) 100%));
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.eventimg {
+    width: 200px;
+    height: 200px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.info h3 {
+    margin-left: 20px;
+    margin-right: 30px;
+}
+
+.graphs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+.white_btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: white;
+    border: 1px solid #000; /* Add a border to make it look like a button */
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none; /* Remove hyperlink underline */
+    color: black; /* Change text color */
+    cursor: pointer;
+  }
+  
+  .white_btn:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+  }
+  
+  /* Additional styling for centering the text */
+  .white_btn::after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+  }
+  
+  .graphs {
+    margin-top: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .white_btn span {
+    display: inline-block;
+    line-height: 1.5; /* Adjust line-height for better centering */
+  }
+  
