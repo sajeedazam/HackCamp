@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Modal from "react-modal";
 import "./UserHome.css";
+import { Link } from "react-router-dom";
 
 const Main = () => {
     const handleLogout = () => {
@@ -11,14 +12,14 @@ const Main = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const myHostedEvents = [
-        { id: 1, name: "Event 1" },
-        { id: 2, name: "Event 2" },
-        { id: 3, name: "Event 3" },
+        { id: 1, name: "Downtown Meet Up" },
+        { id: 2, name: "Walk Through Campus" },
+        { id: 3, name: "Office Party" },
     ];
     const exploreEvents = [
-        { id: 1, name: "Explore Event A" },
-        { id: 2, name: "Explore Event B" },
-        { id: 3, name: "Explore Event C" },
+        { id: 1, name: "Stanley's Birthday" },
+        { id: 2, name: "Outdoor Concert" },
+        { id: 3, name: "Soccer Fun" },
     ];
 
     const openModal = () => {
@@ -60,16 +61,38 @@ const Main = () => {
                             <h2>Add Event</h2>
                             {/* Your add event form or content goes here */}
                             <button onClick={closeModal}>Close</button>
+                            <form>
+                                <label> Event Name:
+                                    <input type="text" name="eventName" required />
+                                </label>
+                                <label>
+                                    Location:
+                                    <input type="text" name="location" required />
+                                </label>
+                                <label>
+                                    Date:
+                                    <input type="date" name="date" required />
+                                </label>
+                                <button type="submit"> Submit</button>
+                            </form>
+
                         </Modal>
                     </div>
                 </span>
 
-                <div className="grid-container">{renderGridItems(myHostedEvents)}</div>
+                <div className="grid-container">
+                    
+                    <Link to="/event" className="link">
+                        {renderGridItems(myHostedEvents)}
+                    </Link>
+                </div>
             </section>
             <section className="explore_section">
                 <h2>Explore Events</h2>
                 <div className="grid-container">
+                <Link to="/event" className="link">
                     {renderGridItems(exploreEvents)}
+                </Link>
                 </div>
             </section>
         </div>

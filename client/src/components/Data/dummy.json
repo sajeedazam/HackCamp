@@ -2,7 +2,7 @@
     "user": "me",
     "eventName": "BdayParty",
     "location": "BC",
-    "date": "2023-11-19",
+    "date": "2023-11-19",   
     "diet": "Kosher",
     "accessability": "no",
     "rsvp": "no"
@@ -23,6 +23,144 @@
     "date": "2023-11-19",
     "diet": "Vegetarian",
     "accessability": "yes",
+    "rsvp": "yes"  
+},
+{
+    "user": "me",
+    "eventName": "BdayParty",
+    "location": "USA",
+    "date": "2023-11-19",
+    "diet": "Pescatarian",
+    "accessability": "yes",
+    "rsvp": "yes"  
+},
+{
+    "user": "me",
+    "eventName": "BdayParty",
+    "location": "BC",
+    "date": "2023-11-19",   
+    "diet": "Halal",
+    "accessability": "no",
+    "rsvp": "no"
+},
+{
+    "user": "me",
+    "eventName": "BdayParty",
+    "location": "USA",
+    "date": "2023-11-19",
+    "diet": "Halal",
+    "accessability": "yes",
+    "rsvp": "maybe"
+},
+{
+    "user": "me",
+    "eventName": "BdayParty",
+    "location": "USA",
+    "date": "2023-11-19",
+    "diet": "Halal",
+    "accessability": "yes",
+    "rsvp": "yes"  
+},
+{
+    "user": "me",
+    "eventName": "BdayParty",
+    "location": "USA",
+    "date": "2023-11-19",
+    "diet": "celiac",
+    "accessability": "yes",
+    "rsvp": "yes"  
+},
+{
+    "user": "me",
+    "eventName": "BdayParty",
+    "location": "BC",
+    "date": "2023-11-19",   
+    "diet": "Halal",
+    "accessability": "no",
+    "rsvp": "no"
+},
+{
+    "user": "me",
+    "eventName": "BdayParty",
+    "location": "USA",
+    "date": "2023-11-19",
+    "diet": "celiac",
+    "accessability": "yes",
+    "rsvp": "maybe"
+},
+{
+    "user": "me",
+    "eventName": "BdayParty",
+    "location": "USA",
+    "date": "2023-11-19",
+    "diet": "celiac",
+    "accessability": "yes",
+    "rsvp": "yes"  
+},
+{
+    "user": "me",
+    "eventName": "BdayParty",
+    "location": "USA",
+    "date": "2023-11-19",
+    "diet": "celiac",
+    "accessability": "yes",
+    "rsvp": "yes"  
+},
+
+{
+    "user": "me",
+    "eventName": "BdayParty",
+    "location": "USA",
+    "date": "2023-11-19",
+    "diet": "Vegetarian",
+    "accessability": "yes",
+    "rsvp": "yes"  
+},
+{
+    "user": "me",
+    "eventName": "BdayParty",
+    "location": "BC",
+    "date": "2023-11-19",   
+    "diet": "Vegetarian",
+    "accessability": "no",
+    "rsvp": "yes"
+},
+{
+    "user": "me",
+    "eventName": "BdayParty",
+    "location": "USA",
+    "date": "2023-11-19",
+    "diet": "Pescatarian",
+    "accessability": "yes",
+    "rsvp": "maybe"
+},
+{
+    "user": "me",
+    "eventName": "BdayParty",
+    "location": "USA",
+    "date": "2023-11-19",
+    "diet": "Pescatarian",
+    "accessability": "yes",
+    "rsvp": "yes"  
+},
+{
+    "user": "me",
+    "eventName": "BdayParty",
+    "location": "USA",
+    "date": "2023-11-19",
+    "diet": "Vegetarian",
+    "accessability": "yes",
+    "rsvp": "yes"  
+},
+
+
+{
+    "user": "me",
+    "eventName": "BdayParty",
+    "location": "BC",
+    "date": "2023-11-19",   
+    "diet": "Kosher",
+    "accessability": "no",
     "rsvp": "yes"
 },
 {
@@ -33,4 +171,23 @@
     "diet": "Pescatarian",
     "accessability": "yes",
     "rsvp": "yes"
-}]
+},
+{
+    "user": "me",
+    "eventName": "BdayParty",
+    "location": "USA",
+    "date": "2023-11-19",
+    "diet": "Pescatarian",
+    "accessability": "yes",
+    "rsvp": "yes"  
+},
+{
+    "user": "me",
+    "eventName": "BdayParty",
+    "location": "USA",
+    "date": "2023-11-19",
+    "diet": "Vegetarian",
+    "accessability": "yes",
+    "rsvp": "yes"  
+}
+]
